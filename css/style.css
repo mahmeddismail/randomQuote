@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(166, 160, 160);
+    color:  #191919;
+    transition: background-color 2s;
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:  #323232;
+}
+
+.pressing{
+    font-family: 'Amatic SC', cursive;
+}
+
+.myQuote{
+    padding: 50px;
+    background-color: #ffffffee;
+    cursor: pointer;
+}
+
+.myQuote:hover{
+    background-color: #ccc; 
+    transition: background-color 2s;
+
+}
+
+button i,button{
+    font-size: 22px !important;
+}
+
+.myBox{   
+     background-color: #ffffffd7;
+}
+
