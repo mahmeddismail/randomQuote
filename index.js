@@ -131,26 +131,23 @@ var colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 
 
 
-let displayedQuote = null;
 function Quote() {
-  
   let value = Math.floor(Math.random() * Quotes.length);
-    while (displayedQuote ==Quotes[value]) {
-      value = Math.floor(Math.random() * Quotes.length);
-    }
   let items = Quotes[value][0];
   let author = Quotes[value][1];
   console.log(items);
+
+  // console.log(items + " " + author);
   document.querySelector(".Quote").innerHTML = items;
   document.querySelector(".author").innerHTML = author;
-  displayedQuote = Quotes[value]
 }
-
-function changeColor() {
+function changeColor(){
   let randomColor = colors[Math.floor(Math.random() * colors.length)];
   myBody.style.backgroundColor = randomColor;
 }
+
 myBtn.addEventListener("click", function () {
   Quote()
   changeColor()
-});
+
+  });
