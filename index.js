@@ -139,13 +139,11 @@ function Quote() {
     value = Math.floor(Math.random() * Quotes.length);
 
   }
-  let items = Quotes[value][0];
-  let author = Quotes[value][1];
-  console.log(items);
-
-  // console.log(items + " " + author);
-  document.querySelector(".Quote").innerHTML = items;
-  document.querySelector(".author").innerHTML = author;
+  let myQuoteArray = Quotes[value][0];
+  let movie = Quotes[value][1];
+  console.log(myQuoteArray);
+  document.querySelector(".Quote").innerHTML = myQuoteArray;
+  document.querySelector(".author").innerHTML = movie;
   displayedQuote = Quotes[value]
 }
 function changeColor() {
